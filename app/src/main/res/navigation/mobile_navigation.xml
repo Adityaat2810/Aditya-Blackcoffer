@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.netcaln_aditya.ui.main.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_network3"
+            app:destination="@id/network" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/network"
+        android:name="com.example.netcaln_aditya.bottomnavfragment.Network"
+        android:label="@string/menu_Network"
+        tools:layout="@layout/fragment_network" >
+        <action
+            android:id="@+id/action_network_to_chat2"
+            app:destination="@id/chat2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat2"
+        android:name="com.example.netcaln_aditya.bottomnavfragment.Chat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chat2_to_contacts4"
+            app:destination="@id/contacts4" />
+    </fragment>
+    <fragment
+        android:id="@+id/group2"
+        android:name="com.example.netcaln_aditya.bottomnavfragment.Groups"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" />
+    <fragment
+        android:id="@+id/contacts4"
+        android:name="com.example.netcaln_aditya.bottomnavfragment.Contacts"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contacts4_to_groups2"
+            app:destination="@id/group2" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_person"
+        android:title="Explore"/>
+
+    <item android:id="@+id/network"
+        android:icon="@drawable/baseline_settings"
+        android:title="Network"/>
+
+    <item android:id="@+id/chat2"
+        android:icon="@drawable/baseline_person"
+        android:title="Chat"/>
+
+    <item android:id="@+id/contacts4"
+        android:icon="@drawable/baseline_person"
+        android:title="Contacts"/>
+
+    <item android:id="@+id/group2"
+        android:icon="@drawable/baseline_person"
+        android:title="Group"/>
+
+</menu>

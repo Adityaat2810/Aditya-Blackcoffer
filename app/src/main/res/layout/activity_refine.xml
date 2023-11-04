@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Refine">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.NetclanExplorerClone.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="REFINE"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/ThemeColor"
+            android:paddingLeft="16dp"
+            app:popupTheme="@style/Theme.NetclanExplorerClone.PopupOverlay"
+
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Select your availablity"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingVertical="10dp"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/boxLayout"
+            android:layout_weight="9"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_square_background"
+           >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/selectButton"
+            android:src="@drawable/baseline_arrow_drop_down_24"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Add your status"/>
+
+    <!-- activity_main.xml -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:paddingVertical="16dp"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/boxLayout2"
+            android:layout_weight="9"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_square_background"
+            >
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:text="Select hyper local distance"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="horizontal">
+        
+        
+        <TextView
+            android:text="0km"
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:text="100Km"
+            android:gravity="end"
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Select Purpose"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/b1"
+                android:backgroundTint="@color/teal_700"
+                android:text="Coffee"
+                android:textSize="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Bussiness"
+                android:textSize="9dp" />
+
+            <Button
+                android:id="@+id/b3"
+                android:backgroundTint="@color/teal_700"
+                android:text="Hobbies"
+                android:layout_marginLeft="10dp"
+                 android:textSize="9dp"
+                 android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/b4"
+                android:backgroundTint="@color/teal_700"
+                android:text="Friendship"
+                android:textSize="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+             <Button
+                 android:id="@+id/b5"
+                android:backgroundTint="@color/teal_700"
+                android:text="Movies"
+                 android:textSize="8dp"
+                 android:layout_marginLeft="10dp"
+
+                 android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+             <Button
+                 android:id="@+id/b6"
+                android:backgroundTint="@color/teal_700"
+                android:text="Dinner"
+                 android:textSize="8dp"
+                android:layout_marginLeft="10dp"
+                 android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/b8"
+                android:backgroundTint="@color/teal_700"
+                android:text="Matrimony"
+                android:textSize="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/b7"
+                android:backgroundTint="@color/teal_700"
+                android:text="Dating"
+                android:textSize="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:textSize="15dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/ThemeColor"
+        android:text="Save and Explore"
+        />
+
+
+
+</LinearLayout>
